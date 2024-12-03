@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindicat d'Estudiants - Comunicat</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --bg-light: #f4f6f7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .stat-label {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .chart-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+
+        .table th, .table td {
+            border: 1px solid #e0e0e0;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .demands, .position, .commitment {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .highlight-message {
+            background-color: var(--accent-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Sindicat d'Estudiants</h1>
+            <p>Defensant una educació centrada en l'aprenentatge i els drets dels estudiants</p>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" style="color: #e74c3c;">60%</div>
+                <div class="stat-label">Estudiants amb Estrès Laboral</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color: #3498db;">40%</div>
+                <div class="stat-label">Reducció Qualitat Aprenentatge</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color: #2ecc71;">75%</div>
+                <div class="stat-label">Precarietat Salarial</div>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <h2 style="text-align: center; margin-bottom: 1.5rem; color: var(--primary-color);">Impacte de les Pràctiques Precàries</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Indicador</th>
+                        <th>Valor</th>
+                        <th>Impacte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Estrès Laboral</td>
+                        <td>60%</td>
+                        <td>Alt risc de burnout i problemes de salut mental</td>
+                    </tr>
+                    <tr>
+                        <td>Qualitat Aprenentatge</td>
+                        <td>40%</td>
+                        <td>Reducció significativa de competències professionals</td>
+                    </tr>
+                    <tr>
+                        <td>Precarietat Salarial</td>
+                        <td>75%</td>
+                        <td>Explotació i condicions laborals inadequades</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="position">
+            <h2 class="section-title">La Nostra Posició Fonamental</h2>
+            <p>Rebutgem categòricament qualsevol iniciativa que redueixi l'educació a un mer servei per a les empreses. Els nostres arguments són clars i contundents:</p>
+            <ol style="padding-left: 2rem; margin-top: 1rem;">
+                <li><strong>Educació, no mercaderia:</strong> Les pràctiques formatives han de ser una eina d'aprenentatge, no un mecanisme d'abaratiment laboral.</li>
+                <li><strong>Contra la precarització estudiantil:</strong> Ens oposem fermament a la transformació dels estudiants en treballadors de baix cost.</li>
+                <li><strong>Participació estudiantil:</strong> Demanem ser actors centrals en les decisions que ens concerneixen.</li>
+            </ol>
+        </section>
+
+        <section class="demands">
+            <h2 class="section-title">Demandes Concretes</h2>
+            <ul style="padding-left: 2rem;">
+                <li>Equilibrin les necessitats formatives amb les demandes del mercat laboral</li>
+                <li>Estableixi marcs de supervisió que protegeixin la qualitat educativa</li>
+                <li>Incorporin mecanismes de participació estudiantil</li>
+            </ul>
+        </section>
+
+        <div class="highlight-message">
+            👉 L'educació ha de formar professionals, no explotar joves
+        </div>
+
+        <section class="commitment">
+            <h2 class="section-title">El Nostre Compromís</h2>
+            <p>Seguirem vigilants, mobilitzant-nos i treballant incansablement per:</p>
+            <ul style="padding-left: 2rem; margin-top: 1rem;">
+                <li>Defensar els drets de tots els estudiants</li>
+                <li>Promoure un model educatiu just i transformador</li>
+                <li>Construir un futur on el coneixement sigui la vertadera prioritat</li>
+            </ul>
+        </section>
+
+        <div class="highlight-message">
+            Units per una educació digna, crítica i compromesa
+        </div>
+
+        <footer class="footer">
+            <p>© 2024 Sindicat d'Estudiants - Construint futur, defensant drets</p>
+        </footer>
+    </div>
+</body>
+</html>
